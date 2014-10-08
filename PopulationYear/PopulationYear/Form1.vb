@@ -3,7 +3,15 @@
 Public Class Form1
 
     Private Sub btnPopulation_Click(sender As Object, e As EventArgs) Handles btnPopulation.Click
-        MessageBox.Show("The answer: not implemented yet!")
+        Dim Population As Double = 7000.0
+        Dim Year As Integer = 2014
+
+        Do While (Population > 6)
+            Population = Population / 2
+            Year = Year - 50
+        Loop
+
+        MessageBox.Show("The answer is " & Year)
 
     End Sub
 End Class
